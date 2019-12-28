@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Infant Vaccination</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">1570038296426140</string>
+    <string name="fb_login_protocol_scheme">fb1570038296426140</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "373285526052",
+    "project_id": "top-chain-197406"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373285526052:android:18ba9d67567f8b49",
+        "android_client_info": {
+          "package_name": "com.example.admin.infantvaccination"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373285526052-ra41rbc3aplntutnu30v6b1nr1vg8np6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "373285526052-n3eosvgee064u68psvo55da7ka5h25l8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.infantvaccination",
+            "certificate_hash": "a03f2f3afaf63915e99454f563511362cbca7582"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJj1jvJ0yV_oQcIxDq00botiuLRqJwJeQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

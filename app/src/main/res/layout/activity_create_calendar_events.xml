@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.CreateCalendarEventsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addEventsTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <Button
+        android:textColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/addEventsTB"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnAddEvents"
+        android:text="Create Events"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <Button
+        android:textColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnAddEvents"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnDeleteEvents"
+        android:text="Delete Events"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:layout_below="@+id/btnDeleteEvents"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvAddEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

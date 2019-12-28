@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/loginActTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_below="@+id/loginActTB"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etLoginUname"
+        android:hint="Email..."
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etLoginUname"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etLoginPassword"
+        android:hint="Password"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btnLoginAct"
+        android:textColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/etLoginPassword"
+        android:layout_below="@+id/etLoginPassword"
+        android:text="LOGIN"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tvLoginForget"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forget Password?"
+        android:layout_below="@+id/btnLoginAct"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvOr"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:layout_below="@+id/tvLoginForget"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/etLoginPassword"
+        android:layout_below="@+id/tvOr"
+        android:id="@+id/btnLoginActGmail"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:layout_alignLeft="@+id/btnLoginActGmail"
+        android:layout_below="@+id/btnLoginActGmail"
+        android:id="@+id/btnLoginActFacebook"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnLoginActFacebook"
+        android:id="@+id/lineLoginAct"
+        android:layout_width="250dp"
+        android:layout_height="3dp"/>
+
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Don't have Account?"
+        android:layout_below="@+id/lineLoginAct"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvLoginActRegister"
+        android:layout_below="@+id/tvLogin"
+        android:text="REGISTER HERE"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

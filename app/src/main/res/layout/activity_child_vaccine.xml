@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.ChildVaccineActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/childVaccineTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/childVaccineCard"
+        android:layout_below="@+id/childVaccineTB"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true" >
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableChildVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/childVaccineTB"
+            android:background="@color/colorPrimary"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/childTvVaccineName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="VACCINE"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:id="@+id/childTvSchedule"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="SCHEDULE"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:paddingLeft="18dp"
+                        android:id="@+id/childTvGiven"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="GIVEN"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/childTvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="STATUS"
+                        android:textColor="@color/cardview_light_background"
+
+                        />
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/childVaccineCard"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:id="@+id/cardlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

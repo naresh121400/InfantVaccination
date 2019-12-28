@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:gravity="center"
+        android:hint="Enter OTP"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etOtp"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <Button
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btOtp"
+        android:text="SUBMIT OTP"
+        android:layout_below="@+id/etOtp"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

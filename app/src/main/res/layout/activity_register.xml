@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.RegisterActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/registerActTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_below="@+id/registerActTB"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etRegisterName"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etRegisterEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etRegisterEmail"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etRegisterPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btnRegister"
+        android:textColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/etRegisterPassword"
+        android:layout_below="@+id/etRegisterPassword"
+        android:text="REGISTER"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.UpdateChildActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/updateChildTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/updateChildTB"
+        android:id="@+id/tvUpdateChild"
+        android:text="NOTE : DATA WILL NOT BE RECOVERED."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnChildDelete"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvUpdateChild"
+        android:layout_centerHorizontal="true"
+        android:text="DELETE CHILD"
+        />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvUpdateOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChildDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="OR"
+        android:textSize="18sp" />
+    <EditText
+        android:hint="Name..."
+        android:layout_alignLeft="@+id/btnChildDelete"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvUpdateOr"
+        android:id="@+id/etUpdateChildName"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnChildEdit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etUpdateChildName"
+        android:layout_centerHorizontal="true"
+        android:text="EDIT CHILD"
+        />
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.UpdateChildVaccineAct">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/updateChildVaccineTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeId"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateChildVaccineTB"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/tvChildVStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:text="Vaccine Status"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_below="@+id/tvChildVStatus"
+            android:id="@+id/tvChildVname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:text="Vaccine Name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvChildVschedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChildVname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="Vaccine Schedule"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnChildGiven"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvChildVschedule"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:hint="Select Given Date..."
+            android:inputType="date"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <EditText
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/etChildHospital"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnChildGiven"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:hint="Hospltal..."
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textSize="16dp" />
+        <ImageView
+            android:id="@+id/imgPlacePicker"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/btnChildGiven"
+            android:background="@drawable/placeholder"
+            android:layout_toRightOf="@+id/etChildHospital"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/btnVaccineUpdate"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/etChildHospital"
+            android:layout_below="@+id/etChildHospital"
+            android:layout_marginTop="5dp"
+            android:text="update" />
+
+
+        <TextView
+            android:id="@+id/tvVaccineRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnVaccineUpdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="You can remove vaccine by remove button"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnVaccineRemove"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/etChildHospital"
+            android:layout_below="@+id/tvVaccineRemove"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="REMOVE"
+            android:textColor="@color/cardview_light_background" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

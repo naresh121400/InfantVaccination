@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.infantvaccination.SettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settingsTB"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:text="Notifications : "
+        android:layout_below="@+id/settingsTB"
+        android:id="@+id/tvNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvNotifications"
+        android:layout_below="@+id/settingsTB"
+        android:id="@+id/switchNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/tvSettingsCompleted"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvNotifications"
+    android:layout_marginTop="10dp"
+    android:text="Completed Vaccine : "
+    android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    <ImageView
+        android:layout_alignLeft="@+id/tvNotifications"
+        android:layout_marginTop="6dp"
+        android:id="@+id/imgSettingsCompleted"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/tvNotifications"
+        android:layout_toRightOf="@+id/tvSettingsCompleted"
+        android:background="@drawable/wright"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/tvSettingsPending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingsCompleted"
+        android:layout_marginTop="10dp"
+        android:text="Pending Vaccine : "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    <ImageView
+        android:layout_alignLeft="@+id/tvNotifications"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgSettingsPending"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/imgSettingsCompleted"
+        android:layout_toRightOf="@+id/tvSettingsCompleted"
+        android:background="@drawable/wrong"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/tvSettingsToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingsPending"
+        android:layout_marginTop="10dp"
+        android:text="Today's Vaccine : "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    <ImageView
+        android:layout_alignLeft="@+id/tvNotifications"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgSettingsToday"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/imgSettingsPending"
+        android:layout_toRightOf="@+id/tvSettingsToday"
+        android:background="@drawable/online"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/tvSettingsComing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingsToday"
+        android:layout_marginTop="10dp"
+        android:text="Scheduled Vaccine : "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    <ImageView
+        android:layout_alignLeft="@+id/tvNotifications"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgSettingsComing"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/imgSettingsToday"
+        android:layout_toRightOf="@+id/tvSettingsComing"
+        android:background="@drawable/today_due"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+</RelativeLayout>

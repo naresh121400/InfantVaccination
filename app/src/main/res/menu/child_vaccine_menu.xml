@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:orderInCategory="300"
+        android:title="Options"
+        app:showAsAction="ifRoom">
+        <menu>
+
+            <item
+                android:id="@+id/menuAddVaccine"
+                android:title="ADD NEW VACCINE"
+                app:showAsAction="ifRoom"
+                android:orderInCategory="100"
+                />
+            <item
+                android:id="@+id/menuNearBy"
+                android:title="NEAR BY HOSPITALS"
+                android:orderInCategory="100"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/menuAddEvents"
+                android:title="ADD CALENDAR EVENTS"
+                android:orderInCategory="100"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/menuSettings"
+                android:title="SETTINGS"
+                android:orderInCategory="100"
+                app:showAsAction="ifRoom"
+                />
+
+        </menu>
+
+
+
+    </item>
+
+</menu>
